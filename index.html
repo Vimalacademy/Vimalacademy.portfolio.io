@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,0">
+<title>Vimalakanth Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/1ec25a932f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <img src="969r.png" class="logo">
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">GitHub</a></li>
+            <li> <a href="#">Contact</a></li>
+            </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I am <span>Vimalakanth</span><br>Academy College, Canada.</h1>
+            </div>
+</div>
+</div>
+<!-----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="25.png">
+</div>
+<div class="about-col-2">
+    <h1 class="sub-title">About Me</h1>
+    <p>I am a website developer who loves to code! I enjoy time with my coding and traveling.I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more.I am a full-stack developer and would love to work with you on your project.</p>
+
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experince')">Experince</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+    </div>
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+            <li><span>web Development</span><br>Web app Development</li>
+            <li><span>App Development</span><br>Building Android/ios apps</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="experince">
+        <ul>
+            <li><span>2021-Current</span><br>UI/UX Design Training at Tech Academy</li>
+            <li><span>2019-2021</span><br>Web app Developer</li>
+            <li><span>2017-2019</span><br>Training Building Android/ios apps</li> 
+        </ul>
+    </div>
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span>2023</span><br>Training at Academy of Tech </li>
+            <li><span>2022</span><br>Training at Academy of Tech</li>
+            <li><span>2021</span><br>Training at Academy of Tech</li>
+        </ul>
+    </div>
+</div>
+        </div>
+        <!-------services------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Web Design with HTML,CSS,JavaScript</h2>
+                        <p>I am available to assist you with your developing software.</p>
+                    </div>
+                    <div>
+                        <h2>Python Language Project</h2>
+                        <p>I am available to assist you with your developing software.</p>
+                    </div>
+                    <div>
+                        <h2>Web Hosting</h2>
+                        <p>I am available to assist you with your developing software.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------Github------->
+        <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">GitHub</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="003.jpg">
+                        <div class="layer">
+                            <h3>My Academy of Tech Projects</h3>
+                            <p>You can view my coding projects on my GitHub profile here:<a href="https://github.com/the-tech-academy/"> The Tech Academy Github!</a></p> </p>
+  </div>
+  </div>
+</div>
+ </div>
+</div>
+</div>
+<!--------contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> vimalakanth123@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>0312563798</p>
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-weibo"></i></a>
+        </div>
+    </div>
+        <div class="contact-right">
+        <form>
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+    </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>© 2023 Vimalakanth | All rights reserved
+        <br>© Prosper Consulting Inc.,</p>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</body>
+</html>
